@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuinoParto - Monitoramento Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.294.0/font/lucide.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="#home" class="logo" onclick="navigateTo('home')">
+                    <div class="logo-icon">
+                        <i data-lucide="piggy-bank"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>SuinoParto</h1>
+                        <p>Monitoramento Inteligente</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <button class="nav-btn active" data-page="home" onclick="navigateTo('home')">
+                        Início
+                    </button>
+                    <button class="nav-btn" data-page="educational" onclick="navigateTo('educational')">
+                        <i data-lucide="book-open"></i>
+                        Educação
+                    </button>
+                    <button class="nav-btn" data-page="history" onclick="navigateTo('history')">
+                        <i data-lucide="history"></i>
+                        Histórico
+                    </button>
+                    <button class="nav-btn" data-page="settings" onclick="navigateTo('settings')">
+                        <i data-lucide="settings"></i>
+                        Configurações
+                    </button>
+                </nav>
+
+                <!-- Notifications -->
+                <button class="notification-btn">
+                    <i data-lucide="bell"></i>
+                    <span class="badge">2</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <button class="nav-btn-mobile active" data-page="home" onclick="navigateTo('home')">
+                    Início
+                </button>
+                <button class="nav-btn-mobile" data-page="educational" onclick="navigateTo('educational')">
+                    Educação
+                </button>
+                <button class="nav-btn-mobile" data-page="history" onclick="navigateTo('history')">
+                    Histórico
+                </button>
+                <button class="nav-btn-mobile" data-page="settings" onclick="navigateTo('settings')">
+                    Configurações
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container">
+        <!-- Content will be dynamically loaded here -->
+    </main>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.294.0/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
